@@ -1,4 +1,4 @@
-# android_device_oukitel_orange
+# android_device_oukitel_k4000pro
 Device repository for Oukitel k4000pro RR-15-1 6735
 
 ALL WORK
