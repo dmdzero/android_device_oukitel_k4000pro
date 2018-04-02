@@ -2,7 +2,7 @@
 PRODUCT_RELEASE_NAME := k4000pro
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/oukitel/k4000pro/device_k4000pro.mk)
@@ -15,7 +15,7 @@ TARGET_SCREEN_WIDTH := 720
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := k4000pro
-PRODUCT_NAME := cm_k4000pro
+PRODUCT_NAME := rr_k4000pro
 PRODUCT_BRAND := oukitel
 PRODUCT_MODEL := k4000pro
 PRODUCT_MANUFACTURER := oukitel

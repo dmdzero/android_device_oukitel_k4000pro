@@ -3,17 +3,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
-$(call inherit-product, vendor/oukitel/orange/orange-vendor-blobs.mk)
+$(call inherit-product, vendor/oukitel/k4000pro/k4000pro-vendor-blobs.mk)
 
 PRODUCT_LOCALES := ru_RU en_US uk_UA
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
-DEVICE_PACKAGE_OVERLAYS += device/oukitel/orange/overlay
-TARGET_OTA_ASSERT_DEVICE := k4000,K4000,orange
+DEVICE_PACKAGE_OVERLAYS += device/oukitel/k4000pro/overlay
+TARGET_OTA_ASSERT_DEVICE := k4000,K4000,k4000pro
 CM_BUILDTYPE :=NIGHTLY
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/oukitel/orange/prebuilt/kernel
+	LOCAL_KERNEL := device/oukitel/k4000pro/prebuilt/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
@@ -28,24 +28,24 @@ PRODUCT_PACKAGES += \
 
 # init.rc's
 PRODUCT_COPY_FILES += \
-	device/oukitel/orange/rootdir/init.mt6735.rc:root/init.mt6735.rc \
-	device/oukitel/orange/rootdir/init.xlog.rc:root/init.xlog.rc \
-	device/oukitel/orange/rootdir/init.mt6735.usb.rc:root/init.mt6735.usb.rc \
-	device/oukitel/orange/rootdir/init.recovery.mt6735.rc:root/init.recovery.mt6735.rc \
-	device/oukitel/orange/rootdir/init.project.rc:root/init.project.rc \
-	device/oukitel/orange/rootdir/factory_init.rc:root/factory_init.rc \
-	device/oukitel/orange/rootdir/factory_init.project.rc:root/factory_init.project.rc \
-	device/oukitel/orange/rootdir/init.ssd.rc:root/init.ssd.rc \
-	device/oukitel/orange/rootdir/init.trace.rc:root/init.trace.rc \
-	device/oukitel/orange/rootdir/init.modem.rc:root/init.modem.rc \
-    device/oukitel/orange/rootdir/fstab.mt6735:root/fstab.mt6735  \
-	device/oukitel/orange/rootdir/ueventd.mt6735.rc:root/ueventd.mt6735.rc \
-	device/oukitel/orange/rootdir/meta_init.rc:root/meta_init.rc \
-	device/oukitel/orange/rootdir/meta_init.project.rc:root/meta_init.project.rc \
-	device/oukitel/orange/rootdir/meta_init.modem.rc:root/meta_init.modem.rc \
-	device/oukitel/orange/rootdir/meta_init.modem.rc:root/factory_init.rc \
-	device/oukitel/orange/rootdir/meta_init.modem.rc:root/factory_init.project.rc \
-	device/oukitel/orange/rootdir/init.rc:root/init.rc
+	device/oukitel/k4000pro/rootdir/init.mt6735.rc:root/init.mt6735.rc \
+	device/oukitel/k4000pro/rootdir/init.xlog.rc:root/init.xlog.rc \
+	device/oukitel/k4000pro/rootdir/init.mt6735.usb.rc:root/init.mt6735.usb.rc \
+	device/oukitel/k4000pro/rootdir/init.recovery.mt6735.rc:root/init.recovery.mt6735.rc \
+	device/oukitel/k4000pro/rootdir/init.project.rc:root/init.project.rc \
+	device/oukitel/k4000pro/rootdir/factory_init.rc:root/factory_init.rc \
+	device/oukitel/k4000pro/rootdir/factory_init.project.rc:root/factory_init.project.rc \
+	device/oukitel/k4000pro/rootdir/init.ssd.rc:root/init.ssd.rc \
+	device/oukitel/k4000pro/rootdir/init.trace.rc:root/init.trace.rc \
+	device/oukitel/k4000pro/rootdir/init.modem.rc:root/init.modem.rc \
+    device/oukitel/k4000pro/rootdir/fstab.mt6735:root/fstab.mt6735  \
+	device/oukitel/k4000pro/rootdir/ueventd.mt6735.rc:root/ueventd.mt6735.rc \
+	device/oukitel/k4000pro/rootdir/meta_init.rc:root/meta_init.rc \
+	device/oukitel/k4000pro/rootdir/meta_init.project.rc:root/meta_init.project.rc \
+	device/oukitel/k4000pro/rootdir/meta_init.modem.rc:root/meta_init.modem.rc \
+	device/oukitel/k4000pro/rootdir/meta_init.modem.rc:root/factory_init.rc \
+	device/oukitel/k4000pro/rootdir/meta_init.modem.rc:root/factory_init.project.rc \
+	device/oukitel/k4000pro/rootdir/init.rc:root/init.rc
 	
 # hardware specifics
 PRODUCT_COPY_FILES += \
@@ -138,7 +138,7 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
-    device/oukitel/orange/configs/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
+    device/oukitel/k4000pro/configs/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
     
 # FM Radio
 PRODUCT_PACKAGES += \
@@ -161,8 +161,8 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 PRODUCT_COPY_FILES += \
-    device/oukitel/orange/rootdir/etc/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
-	device/oukitel/orange/configs/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml \
+    device/oukitel/k4000pro/rootdir/etc/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+	device/oukitel/k4000pro/configs/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml \
 	
 # Thermal
 PRODUCT_COPY_FILES += \

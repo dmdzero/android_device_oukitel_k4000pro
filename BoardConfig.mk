@@ -57,7 +57,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 1610612736
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 #for now lets use prebuilt
-#TARGET_PREBUILT_KERNEL := device/oukitel/k4000pro/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := device/oukitel/k4000pro/prebuilt/kernel
 
 #system.prop
 TARGET_SYSTEM_PROP := device/oukitel/k4000pro/system.prop
