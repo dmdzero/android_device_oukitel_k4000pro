@@ -1,7 +1,7 @@
 #!/bin/sh
 
 VENDOR=oukitel
-DEVICE=orange
+DEVICE=k4000pro
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 

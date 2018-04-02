@@ -1,5 +1,5 @@
 # android_device_oukitel_orange
-Device repository for Oukitel k4000(Orange) CM12.1 6735
+Device repository for Oukitel k4000pro RR-15-1 6735
 
 ALL WORK
 
@@ -10,3 +10,4 @@ ALL WORK
  * Deepflex
  * olegsvs
  * visi0nary
+ * vitek999

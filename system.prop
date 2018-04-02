@@ -1,5 +1,5 @@
 #
-# system.prop for Oukitel k4000(Orange)
+# system.prop for Oukitel k4000(k4000pro)
 #
 
 rild.libpath=/system/lib/mtk-ril.so
