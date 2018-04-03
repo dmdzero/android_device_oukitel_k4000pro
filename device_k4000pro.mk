@@ -183,7 +183,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 $(call inherit-product, build/target/product/full.mk)
 
-ADDITIONAL_DEFAULT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
 	ro.secure=0 \
 	ro.allow.mock.location=1 \
 	ro.debuggable=1 \
