@@ -59,6 +59,8 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 #for now lets use prebuilt
 TARGET_PREBUILT_KERNEL := device/oukitel/k4000pro/prebuilt/kernel
+PRODUCT_COPY_FILES += \
+	$(TARGET_PREBUILT_KERNEL):kernel
 BOARD_KERNEL_IMAGE_NAME=zImage
 
 #system.prop
