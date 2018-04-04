@@ -3,6 +3,7 @@ LOCAL_PATH := device/oukitel/k4000pro
 
 # inherit from the proprietary version
 -include vendor/oukitel/k4000pro/BoardConfigVendor.mk
+-include vendor/mediatek/VendorConfig.mk
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
 # Link against libxlog

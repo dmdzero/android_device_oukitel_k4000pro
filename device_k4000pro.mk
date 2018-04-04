@@ -4,6 +4,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 $(call inherit-product, vendor/oukitel/k4000pro/k4000pro-vendor-blobs.mk)
+$(call inherit-product, vendor/mediatek/VendorProduct.mk)
 
 PRODUCT_LOCALES := ru_RU en_US uk_UA
 PRODUCT_AAPT_CONFIG := normal hdpi
